@@ -1,0 +1,15 @@
+<!-- IF PROTECTIM_ENABLED -->
+		<hr class="dashed" />
+		<!-- IF PROTECTIM_ERROR --><div class="error">{PROTECTIM_ERROR}</div><!-- ENDIF -->
+		<dl>
+			<dt><label>{L_PROTECTIM_SESSION}:</label></dt>
+			<dd>
+				<strong>{PROTECTIM_SESSION}</strong>
+				<input type="hidden" name="protectim_session" id="protectim_session" value="{PROTECTIM_SESSION}" />
+			</dd>
+		</dl>
+		<dl>
+			<dt><label for="protectim_code">{L_PROTECTIM_CODE}:</label><br /><span>{L_PROTECTIM_CODE_EXPLAIN}</span></dt>
+			<dd><input type="text" tabindex="{$CAPTCHA_TAB_INDEX}" name="protectim_code" id="protectim_code" size="25" class="inputbox autowidth" /></dd>
+		</dl>
+<!-- ENDIF -->
